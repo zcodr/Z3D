@@ -1,1 +1,1 @@
-g++ main.cpp -o main -I /opt/homebrew/Cellar/sdl2/2.30.3/include -L /opt/homebrew/Cellar/sdl2/2.30.3/lib -lSDL2
+g++ src/*.cpp -o main -I /opt/homebrew/Cellar/sdl2/2.30.3/include -L /opt/homebrew/Cellar/sdl2/2.30.3/lib -lSDL2
