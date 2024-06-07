@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "ios": "cpp"
+        "ios": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "limits": "cpp",
+        "__undef_macros": "cpp",
+        "complex": "cpp"
     }
 }
