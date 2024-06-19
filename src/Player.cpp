@@ -33,12 +33,12 @@ void Player::update(SDL_Renderer* renderer, float walls[][4]) {
         }
 
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        // if (result[0] == 1000000 && result[1] == 1000000) {
-        //     SDL_RenderDrawLineF(renderer, x, y, x + cos(i + direction - (conv/2)) * 2000, y + sin(i + direction - (conv/2)) * 2000);
-        // }
-        // else {
-        //     SDL_RenderDrawLineF(renderer, x, y, result[0], result[1]);
-        // }
+        if (result[0] == 1000000 && result[1] == 1000000) {
+            SDL_RenderDrawLineF(renderer, x, y, x + cos(i + direction - (conv/2)) * 2000, y + sin(i + direction - (conv/2)) * 2000);
+        }
+        else {
+            SDL_RenderDrawLineF(renderer, x, y, result[0], result[1]);
+        }
 
         float distance = sqrt((x - result[0])*(x - result[0]) + (y - result[1])*(y - result[1]));
         distance = distance * cos(i + - (conv/2));
